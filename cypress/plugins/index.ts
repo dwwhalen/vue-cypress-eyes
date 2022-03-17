@@ -17,4 +17,4 @@ export default ((on, config) => {
   // `config` is the resolved Cypress config
   return config
 }) as Cypress.PluginConfig
-require('@applitools/eyes-cypress')
+require('@applitools/eyes-cypress');
