@@ -4,8 +4,13 @@ describe('My First Test', () => {
     cy.contains('h1', 'You did it!')
     cy.eyesOpen({
       appName: 'Demo App',
-      testName: 'Ultrafast grid demo',
+      testName: 'My Demo App test',
     })
+    cy.eyesCheckWindow({
+      tag: "Home Page",
+      target: 'window',
+      fully: true
+  });
     cy.eyesClose()
   })
 })
